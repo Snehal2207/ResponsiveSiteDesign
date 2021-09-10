@@ -1,0 +1,140 @@
+#menu-banner {
+    margin-top: 59px;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/menu/banner.png");
+    height: 450px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+ .banner-text {
+        top:31%;
+    }
+
+
+.images {
+    margin: 20px;
+}
+
+.tag_class {
+    font-size: 1.3em;
+}
+
+.strong {
+    font-weight:600;
+}
+
+.back_img {
+    margin: 70px;
+    background-image: url("../images/menu/back_img.png");
+}
+
+.menu1 img {
+    width: 20%;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.menu1 {
+    display: flex;
+}
+
+.menutitle {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.menutitle h2 {
+    padding-top: 30px;
+}
+
+.menucontent {
+    padding-top: 10px;
+    width: auto;
+    padding-bottom: 70px;
+}
+
+.menucontent p {
+    padding-left: 50px;
+}
+
+.menucontent_price {
+    float: right;
+}
+
+@media only screen and (max-width:767px) {
+    #menu-banner {
+        margin-top: 0;
+        height: 240px;
+        background-size: cover;
+    }
+
+    .banner-text {
+        top:10%;
+    }
+
+    .back_img {
+        margin:0;
+    }
+
+    .col-6 li {
+        margin:0;
+        text-align: left;
+    }
+
+    .menu1 img {
+        width:70px;
+        height:70px;
+    }
+
+    .menutitle h2 {
+        padding-top:15px;
+    }
+
+    .images {
+        margin: 20px auto;
+    }
+    .menucontent {
+        padding-bottom: 60px;
+    }
+    .menucontent p {
+        padding-left: 5px;
+    }
+    .menucontent_name {
+        padding-left: 1px;
+    }
+    .menucontent_price {
+        padding-left: 100px;
+    }
+
+    
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    
+    #menu-banner {
+        margin-top:0;
+        height:360px;
+        background-size: cover;
+    }
+
+    .banner-text {
+        top: 27%;
+        
+    }
+
+    .menucontent p {
+        padding-right: 90px;
+    }
+
+    .back_img {
+        margin:0;
+    }
+
+    .menu1 img {
+        width:90px;
+        height:90px;
+    }
+}
