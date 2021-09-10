@@ -1,0 +1,243 @@
+#chef-banner {
+    margin-top: 59px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/chef/chef-banner.png");
+    height: 450px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.space-bottom-right1 {
+    margin: 0 1%;
+}
+
+.chef-image {
+    height: 300px;
+}
+
+.chef-text {
+    margin-bottom: 0;
+    padding-bottom: 3px;
+    padding-top: 310px;
+    text-align: left;
+    font-size: 15px;
+    background-color: white;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+h3,
+.chef-text p {
+    text-align: center;
+    color: black;
+}
+
+.dish-image {
+    height: 260px;
+    width: 100%;
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: #bc0402;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+    padding-top: 0px;
+    color: white;
+}
+
+.hover-img1,
+.hover-img2 {
+    position: relative;
+    width: 100%;
+}
+
+.hover-img2 {
+    display: none;
+}
+
+.staff-list {
+    margin-bottom: 5%;
+}
+
+#staff-table {
+    margin: auto;
+}
+
+table {
+    text-align: center;
+    width: 80%;
+}
+
+thead {
+    background-color: #bc0402;
+    color: white;
+}
+
+thead td {
+    padding: 20px 25px;
+    font-size: 1.5em;
+}
+
+td {
+    padding: 0 25px;
+    font-size: 1.2em;
+}
+
+tr img {
+    height: 50px;
+    width: 60px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+tr img:hover {
+    transform: scale(2);
+    box-shadow: 2px 2px 5px grey;
+}
+
+tr:nth-child(even) {
+    background-color: #f7e4e4;
+}
+
+tbody tr:hover {
+    background-color: #edbab8;
+}
+
+.row1 {
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-3-1 {
+    flex: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    #chef-banner {
+        margin-top:0;
+        height:360px;
+        background-size: cover;
+    }
+
+    .banner-text {
+        top: 16%;
+        left: 24%;
+        width: 50%;
+    }
+
+    .col-3-1 {
+        flex: 40%;
+        margin-bottom: 3%;
+    }
+    .hover-img2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    #chef-banner {
+        margin-top: 0;
+        height: 240px;
+        background-size: cover;
+    }
+    .row1 {
+        flex-direction: column;
+        padding-left:10%;
+        padding-right:10%;
+    }
+    .space-bottom-right1 {
+        margin:0;
+    }
+    .col-3-1 {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .hover-img2 {
+        display: flex;
+    }
+    .hover-img1 {
+        display: none;
+    }
+    .chef-image {
+        width: 100%;
+    }
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr,
+    th {
+        display: block;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    td {
+        border: none;
+        border-bottom: 1px solid #000;
+        position: relative;
+        padding-left: 50%;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        text-align: left;
+        font-size: 1em;
+    }
+    td:before {
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    td:nth-of-type(1):before {
+        content: "Name";
+    }
+    td:nth-of-type(2):before {
+        content: "Expertise";
+    }
+    td:nth-of-type(3):before {
+        content: "Special-Dish";
+    }
+    td:nth-of-type(4):before {
+        content: "Image";
+    }
+}
